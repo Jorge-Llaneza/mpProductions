@@ -2,9 +2,138 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>MP Productions</title>
+  <meta name="description" content="MP Productions — sound that moves. Music production, mixing, and releases.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>MP Productions</h1>
+
+  <header class="nav">
+    <div class="wrap">
+      <a href="#" class="logo">MP<span>.</span>PRODUCTIONS</a>
+      <nav>
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="nav-toggle" aria-label="Menu">&#9776;</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <span class="eyebrow">Music &amp; Audio Production</span>
+    <h1>MP Productions</h1>
+    <p class="tagline">Sound that moves. We write, produce, and mix records built to last.</p>
+    <div class="cta-row">
+      <a href="#work" class="btn btn-primary">Listen to our work</a>
+      <a href="#contact" class="btn btn-ghost">Get in touch</a>
+    </div>
+  </section>
+
+  <section class="hype" id="hype">
+    <div class="wrap">
+      <span class="hype-badge">Coming Soon</span>
+      <h2>Something big is on the way.</h2>
+      <p>We're deep in the studio on our biggest release yet. Follow along — you don't want to miss this one.</p>
+      <a href="#contact" class="btn btn-primary">Get notified</a>
+    </div>
+  </section>
+
+  <section id="work">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Selected Work</span>
+        <h2>Portfolio</h2>
+      </div>
+      <div class="grid">
+        <div class="card">
+          <div class="card-art g1">TRACK 01</div>
+          <div class="card-body">
+            <h3>Midnight Static</h3>
+            <p>Original production &amp; mix</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-art g2">TRACK 02</div>
+          <div class="card-body">
+            <h3>Afterglow</h3>
+            <p>Production for independent artist</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-art g3">TRACK 03</div>
+          <div class="card-body">
+            <h3>Low Tide</h3>
+            <p>Mixing &amp; mastering</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-art g4">TRACK 04</div>
+          <div class="card-body">
+            <h3>Neon Hours</h3>
+            <p>Full production, EP lead single</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="about-art"><span>MP</span></div>
+      <div class="about-text">
+        <span class="eyebrow">About</span>
+        <h2>We make records that stick.</h2>
+        <p>MP Productions is an independent music production outfit focused on songwriting, production, and mix work for artists who want their sound to feel finished, not just recorded.</p>
+        <p>Every project gets the same approach: strong arrangement first, then a mix that translates everywhere — club, car, headphones.</p>
+        <div class="stat-row">
+          <div class="stat"><b>50+</b><span>Tracks produced</span></div>
+          <div class="stat"><b>12</b><span>Artists worked with</span></div>
+          <div class="stat"><b>5</b><span>Years in the studio</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap">
+      <div class="section-head">
+        <span class="eyebrow">Let's work together</span>
+        <h2>Contact</h2>
+      </div>
+      <form>
+        <div class="field">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="field">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Send message</button>
+      </form>
+      <div class="socials">
+        <a href="#">Instagram</a>
+        <a href="#">YouTube</a>
+        <a href="#">Spotify</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2026 MP Productions. All rights reserved.
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
