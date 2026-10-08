@@ -100,6 +100,7 @@ a { color: inherit; text-decoration: none; }
   padding: 120px 24px 80px;
   position: relative;
   overflow: hidden;
+  background: url("assets/home.jpg") center / cover no-repeat;
 }
 
 .hero::before {
@@ -107,9 +108,15 @@ a { color: inherit; text-decoration: none; }
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(circle at 20% 20%, rgba(255, 60, 172, 0.18), transparent 45%),
-    radial-gradient(circle at 80% 70%, rgba(23, 233, 224, 0.14), transparent 45%);
+    linear-gradient(180deg, rgba(7,7,10,0.55) 0%, rgba(7,7,10,0.75) 60%, rgba(7,7,10,0.95) 100%),
+    radial-gradient(circle at 20% 20%, rgba(255, 60, 172, 0.22), transparent 45%),
+    radial-gradient(circle at 80% 70%, rgba(23, 233, 224, 0.18), transparent 45%);
   pointer-events: none;
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
 }
 
 .hero .eyebrow {
